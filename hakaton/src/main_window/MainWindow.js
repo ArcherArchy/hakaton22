@@ -11,18 +11,14 @@ import server from "../api/server"
 
 
 class MainWindow extends React.Component {
-  // constructor (props) {
-  //   super(props);
-  //   this.state = {file_to_upload: new FormData()};
-  // }
 
   UploadFileToApi(config, formData){
     try{
       const response = server.post("", formData, config)  
-      alert("Loaded successfully!")
+      alert("Uploaded successfully!")
     }
     catch{
-      alert("Loaded unsuccessfully!")
+      alert("Downloaded unsuccessfully!")
     }
   }
 
@@ -79,14 +75,11 @@ class MainWindow extends React.Component {
                 </label>
                 </div>
               </div>
-              <div class="col super-puper-main-col"><LoadButton/></div>
-            <div class="col"></div>
-            </div>
+                <div class="col super-puper-main-col"><LoadButton/></div>
+                  <div class="col"></div>
+          </div>
             
           </div>
-        
-        
-    
 
     );
   }
@@ -98,7 +91,6 @@ class MainWindow extends React.Component {
         const response = server.get("http://shibe.online/api/shibes?count=[1-100]&urls=[true/false]&httpsUrls=[true/false]")
         .then((response) => response.blob())
         .then((blob) => {
-          // Create blob link to download
           const url = window.URL.createObjectURL(
             new Blob([blob]),
           );
@@ -109,13 +101,10 @@ class MainWindow extends React.Component {
             `FileName.png`,
           );
       
-          // Append to html link element page
           document.body.appendChild(link);
       
-          // Start download
           link.click();
       
-          // Clean up and remove the link
           link.parentNode.removeChild(link);
         });
         alert("Loaded successfully!")
