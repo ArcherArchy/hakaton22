@@ -1,0 +1,17 @@
+/* .MainButton {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+} */
+
+.super-puper-main-col{
+    float: right !important;
+}
