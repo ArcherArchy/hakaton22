@@ -1,0 +1,40 @@
+.main-button{
+    background-color: #8A2432;
+    border-color: #8A2432;
+    font-family: Octosquares;
+    font-size: 2.76vh;
+    display: table-cell;
+    --bs-btn-hover-bg: #ff7313;
+    --bs-btn-hover-border-color: #ff7313;
+    --bs-btn-active-bg: #C6C6C6;
+    --bs-btn-active-border-color: #C6C6C6;
+    --bs-btn-disabled-bg: #7e7e7e;
+    --bs-btn-disabled-border-color: #7e7e7e;
+    width: 20vw;
+    height: 8vh;
+}
+
+label.slogan-button{
+    background-image: url(../../image/3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 26vw;
+    height: 16vh;    
+}
+
+div.button-col{
+    justify-content: center;
+}
+
+div.slogan{
+    margin-top: 3vh;
+}
+
+div.upload-button{
+    margin-top: 53vh;
+}
+
+div.download-button{
+    margin-top: 3vh;
+}

@@ -1,17 +1,41 @@
-/* .MainButton {
-    appearance: none;
-    background-color: initial;
-    cursor: default;
-    align-items: baseline;
-    color: inherit;
-    text-overflow: ellipsis;
-    white-space: pre;
-    text-align: start !important;
-    padding: initial;
-    border: initial;
-    overflow: hidden !important;
-} */
+button.logo{
+    background-image: url(../../image/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 16vw;
+    height: 16vh;   
+    background-color:  #8A2432;
+}
 
-.super-puper-main-col{
-    float: right !important;
+div.logo{
+    margin-top: 3vh;
+    width: 100%;
+    background-color:  #8A2432;
+}
+
+label.loader{
+    background-image: url(../../image/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 63vh;
+    height: 63vh;
+    position: absolute;   
+}
+
+div.loader{
+    margin-top: 9vh;
+    width: 100%;
+    justify-content: center;
+}
+
+div.status{
+    color: black !important;
+    position: relative;
+    top: 30vh;
+    font-family: Octosquares;
+    font-size: 2.25vh;
+    width: 25vh;
+    text-align: center;
 }
